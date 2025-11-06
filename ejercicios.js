@@ -223,7 +223,13 @@ function sumaArray(numeros) {
  */
 function promedioArray(numeros) {
   // TODO: Calcula el promedio (suma total / cantidad de elementos)
-  return 0;
+    const pares = numeros;
+    let suma = 0;
+    for (let i = 0; i < pares.length; i++) {
+        suma += pares[i];
+    }
+    const promedio = suma / pares.length;
+    return promedio;
 }
 
 /**
